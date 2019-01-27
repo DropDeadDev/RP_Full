@@ -54,22 +54,74 @@ body
 
 .section
 	&__descr
-		padding: 80px 30px 0 30px
+		padding: 50px 30px 0 30px
 	&__form
 		padding: 20px 30px
 
-form, input, textarea
+form, input, textarea, label
 	width: 100%
 	
-input 
+input
 	border-radius: 4px
 	background-color: #f7f7fa
-	margin: 0 0 15px 0
-	padding: 10px
+	padding: 25px 10px
 	border: none
+	&:hover
+		background-color: #eaeaee
+	&:focus
+		box-shadow: 0px 0px 0px 3px rgba(70, 162, 252, 0.5)
+
+.input	
+	&__descr
+		padding-left: 10px
+		position: absolute
+		z-index: 2
+		color: rgba(39, 37, 42, 0.4)
 
 textarea 
 	background-color: #f7f7fa
 	border: none
+	border-radius: 4px
+	padding: 25px 10px
+	z-index: 1
+	&:hover
+		background-color: #eaeaee
+	&:focus
+		box-shadow: 0px 0px 0px 3px rgba(70, 162, 252, 0.5)
+
+label
+	margin-bottom: 15px
+
+.save-btn
+	width: 120px
+	height: 40px
+	border: none
+	font-weight: 500
+	border-radius: 4px
+	background: #008dfe
+	color: #fff
+	padding: 8px 12px
+	&:hover
+		background-color: darken(#008dfe, 5%)
+	&:focus
+		outline: none
+		box-shadow: 0px 0px 0px 3px rgba(70, 162, 252, 0.5)
+
+.cancel-btn
+	width: 120px
+	height: 40px
+	border: none
+	border-radius: 4px
+	color: #282828
+	font-weight: 400
+	background-color: #e5e9ef
+	padding: 5px 10px
+	margin-left: 15px
+	&:hover
+		background-color: darken(#e5e9ef, 5%)
+	&:focus
+		outline: none
+		box-shadow: 0px 0px 0px 3px rgba(229, 233, 239, 0.5)
+
 
 @import "media" // Always at the end
