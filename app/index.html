@@ -48,27 +48,27 @@
 
 				<div class="row">
 
-					<form action="#">
+					<form class="form" action="#">
 
 						<div class="col-md-12">
 
 							<div class="row">
 
 								<div class="col-md-4">
-								 <label for="group"> <span class="input__description">Название группы</span> <input type="text" placeholder="Введите название"></input></label>
+								 <label class="label" for="group"> <span class="input__description">Название группы</span> <input class="input" type="text" placeholder="Введите название"></input></label>
 								</div>
 
 								<div class="col-md-4">
-									<label for="name"> <span class="input__description">ФИО ответственного</span> <input type="text" placeholder="Введите ФИО"></input></label>
+									<label class="label" for="name"> <span class="input__description">ФИО ответственного</span> <input class="input" type="text" placeholder="Введите ФИО"></input></label>
 								</div>
 
 								<div class="col-md-4">
-									<label for="email"> <span class="input__description">Email для входа</span> <input type="text" placeholder="Введите Email"></input></label>
+									<label class="label" for="email"> <span class="input__description">Email для входа</span> <input class="input" type="text" placeholder="Введите Email"></input></label>
 								</div>
 
 							</div>
 
-							<label for="text"> <span class="input__description">Email для входа</span> <textarea type="text" placeholder="Введите краткое и емкое описание рабочей для группы"></textarea></label>
+							<label class="label" for="text"> <span class="input__description">Email для входа</span> <textarea class="textarea" type="text" placeholder="Введите краткое и емкое описание рабочей для группы"></textarea></label>
 						</div>
 						<div class="col-md-12">
 							<button class="button button-save">Сохранить</button> <button class="button button-cancel">Отмена</button>
@@ -87,7 +87,7 @@
 				</div>
 
 				<div class="attention__section">
-					<div class="row">
+					<div class="row align-items-center">
 						<div class="col-md-1">
 							<div class="warning-wrapper">
 								<i class="material-icons md-36">warning</i>
@@ -100,43 +100,115 @@
 					</div>
 				</div>
 
+				
+
 				<div class="row">
+
 					<div class="col-md-3">
 						<div class="app-header">
-							<div class="app-icon"></div>
-							<span class="app-name">Telegram</span>
+							<div class="row align-items-center">
+								<div class="col-md-12">
+									<div class="app-icon icon-1"></div>
+								</div>
+								<div class="col-md-12">
+									<span class="app-name">Telegram</span>
+								</div>
+							</div>
 						</div>
 						<div class="app-settings">
-							
+							<div class="row text-center">
+								<div class="col-md-12">
+									<button class="account-off">Отключить аккаунт</button>
+								</div>
+								<div class="col-md-12">
+									<label class="checkbox-label" for="checkbox"><input class="checkbox" checked type="checkbox"> Только служебные</label>
+								</div>
+							</div> 
 						</div>
 					</div>
+
 					<div class="col-md-3">
 						<div class="app-header">
-							<div class="app-icon"></div>
-							<span class="app-name">ICQ</span>
+							<div class="row align-items-center">
+								<div class="col-md-12">
+									<div class="app-icon icon-2"></div>
+								</div>
+								<div class="col-md-12">
+									<span class="app-name">ICQ</span>
+								</div>
+							</div>
 						</div>
 						<div class="app-settings">
-							
+							<div class="row align-items-center">		
+								<div class="col-md-9">
+									<div class="account-instructions">1. Скопируйте команду авторизации</div>
+								</div>
+								<div class="col-md-3">
+									<a href="#" class="copy__link"><i class="material-icons md-24">content_copy</i></a>
+								</div>
+								<div class="col-md-9">
+									<div class="account-instructions">2. Перейдите в чат и отправьте команду боту</div>
+								</div>
+								<div class="col-md-3">
+									<a href="#" class="copy__link"><i class="material-icons md-24">content_copy</i></a>
+								</div>
+							</div>
 						</div>
 					</div>
+
 					<div class="col-md-3">
 						<div class="app-header">
-							<div class="app-icon"></div>
-							<span class="app-name">Skype</span>
+							<div class="row align-items-center">
+								<div class="col-md-12">
+									<div class="app-icon icon-3"></div>
+								</div>
+								<div class="col-md-12">
+									<span class="app-name">Skype</span>
+								</div>
+							</div>
 						</div>
 						<div class="app-settings">
-							
+							<div class="row align-items-center">
+								<div class="col-md-9">
+									<div class="account-instructions">1. Скопируйте команду авторизации</div>
+								</div>
+								<div class="col-md-3">
+									<a href="#" class="copy__link"><i class="material-icons md-24">content_copy</i></a>
+								</div>
+								<div class="col-md-9">
+									<div class="account-instructions">2. Перейдите в чат и отправьте команду боту</div>
+								</div>
+								<div class="col-md-3">
+									<a href="#" class="copy__link"><i class="material-icons md-24">content_copy</i></a>
+								</div>
+							</div>
 						</div>
 					</div>
+
 					<div class="col-md-3">
 						<div class="app-header">
-							<div class="app-icon"></div>
-							<span class="app-name">Slack</span>
+							<div class="row align-items-center">
+								<div class="col-md-12">
+									<div class="app-icon icon-4"></div>
+								</div>
+								<div class="col-md-12">
+									<span class="app-name">Slack</span>
+								</div>
+							</div>
 						</div>
 						<div class="app-settings">
-							
+							<div class="row text-center align-items-center">
+								<div class="col-md-12">
+									<button class="account-off">Отключить аккаунт</button>
+								</div>
+								<div class="col-md-12">
+									<label class="checkbox-label" for="checkbox"><input class="checkbox" type="checkbox"> Только служебные</label>
+								</div>
+							</div> 
 						</div>
 					</div>
+
+
 				</div>
 
 			</div>
